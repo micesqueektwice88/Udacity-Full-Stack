@@ -42,3 +42,5 @@ movies = [toy_story, avatar, Dredd, Sicario, Interstellar, Fury]
 #print (media.Movie.VARIOUS_RATINGS)
 print (media.Movie.__module__)
 
+#THis note has been added as a GItHub upload test
+
