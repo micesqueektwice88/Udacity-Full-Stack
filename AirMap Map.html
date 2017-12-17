@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <script src="https://cdn.airmap.io/js/maps/v2.2/airmap.map.min.js"></script>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            #airspaceMap {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" placeholder-"Search">
+        <div id="airspaceMap">
+            <!-- map is loaded here -->
+        </div>
+        <script>
+            var config = {
+    "airmap": {
+        "api_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVkZW50aWFsX2lkIjoiY3JlZGVudGlhbHxSMnluMzRuU24wR09lN2ZRazNNbFl1OUFMS0FEIiwiYXBwbGljYXRpb25faWQiOiJhcHBsaWNhdGlvbnx6ZEVYd1k3aUxSR0tlWnU4dmRPWFQ3bDN4d3giLCJvcmdhbml6YXRpb25faWQiOiJkZXZlbG9wZXJ8WHFQdzBsWmZXZzVtb0xjRUtFMlhnVDVXN0J5ZyIsImlhdCI6MTUwNTE4NDAwNX0.5_-3SpUgqx-dzwe5fOWtTMQxLmXHLKo11yFrNQRLW9g"
+    },
+    "auth0": {
+        "client_id": "EY18riEsRTX83Q4voSK8BtZVbQgL1gta",
+        "callback_url": "https://localhost:8080"
+    },
+    "mapbox": {
+	"access_token": "pk.eyJ1IjoibWFyeWhqZW4iLCJhIjoiY2o1MzA3Ymh0MDFxZzJ3cDluazFzOWdtYiJ9.hvF2lu4zav9QvtUr1FuTDw"
+    }
+}/* your config json generated from AirMap's Developer Portal */;
+            var map = new Airmap.Map(config, {
+                container: 'airspaceMap',
+                center: [33.9416, -118.4085],
+                layers: ['airports_recreational', 'national_parks', 'tfrs', 'wildfires']
+                /* refer to the docs for a comprehensive list of options */
+            });
+        </script>
+    </body>
+</html>
