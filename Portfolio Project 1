@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+    <header>
+        <h1>Testing</h1>
+
+        <!--Grid settings-->
+        <style>
+                .item1 { grid-area: header; }
+                .item2 { grid-area: menu; }
+                .item3 { grid-area: main; }
+                .item4 { grid-area: right; }
+                .item5 { grid-area: footer; }
+                
+                .grid-container {
+                  display: grid;
+                  grid-template-areas:
+                    'header header header header header header'
+                    'menu main main main right right'
+                    'menu footer footer footer footer footer';
+                  grid-gap: 10px;
+                  background-color: #2196F3;
+                  padding: 10px;
+                }
+                .grid-container > div {
+                  background-color: rgba(255, 255, 255, 0.8);
+                  text-align: center;
+                  padding: 20px 0;
+                  font-size: 30px;
+                }
+        </style>
+        
+    </header>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    </head>
+    <body>
+        <header>
+        <h1>This is just a drill</h1>
+        </header> 
+        <h1>This is a Title Placeholder</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/SNice.svg" alt="Smiley" height="62" width="62">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Face-sad.svg/1024px-Face-sad.svg.png" alt="sad" height="62" width="62">
+        <img src="https://www.emojirequest.com/images/MehEmoji.jpg" alt="meh" height="62" width="62"> 
+        <img src="http://cdn.shopify.com/s/files/1/1061/1924/products/Angry_Emoji_grande.png?v=1480481051" alt="mad" height="62" width="62">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+        <div class="grid-container">
+                <div class="item1">Header</div>
+                <div class="item2">Menu</div>
+                <div class="item3">Main</div>  
+                <div class="item4">Right</div>
+                <div class="item5">Footer</div>
+        </div>
+
+    <section>
+    <article>
+            <p>This is not a song about a girl</p>
+
+    </article>
+    </section>
+
+    </body>
+
+    <footer>
+        <p> testing footer
+        </p>
+    </footer>
+</html>
